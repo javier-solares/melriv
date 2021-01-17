@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/bolas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 900vh;
+}
+
+.wrap {
+    width: 1100px;
+    margin-top: 250px;
+    margin: 50px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    -ms-flex-pack: center;
+    justify-content: center;
+    animation: escalar 2s infinite alternate;
+}
+
+@keyframes escalar {
+    to {
+        transform: scale(0.9);
+    }
+    from {
+        transform: scale(1);
+    }
+}
+
+.tarjeta-wrap {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    background: #31271946;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante {
+    width: 100%;
+}
+
+.atras {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card1 {
+    background-image: url(../img/r1.jpg);
+    background-size: cover;
+}
+
+#a1 {
+    background-image: url(../img/r16.jpg);
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url(../img/r2.jpg);
+    background-size: cover;
+}
+
+#a2 {
+    background-image: url(../img/r17.jpg);
+    background-size: cover;
+}
+
+.card3 {
+    background-image: url(../img/r3.jpg);
+    background-size: cover;
+}
+
+#b3 {
+    background-image: url(../img/r18.jpg);
+    background-size: cover;
+}
+
+.card4 {
+    background-image: url(../img/r4.jpg);
+    background-size: cover;
+}
+
+#a4 {
+    background-image: url(../img/r19.jpg);
+    background-size: cover;
+}
+
+.card5 {
+    background-image: url(../img/r5.jpg);
+    background-size: cover;
+}
+
+#c5 {
+    background-image: url(../img/r20.jpg);
+    background-size: cover;
+}
+
+.card6 {
+    background-image: url(../img/r6.jpg);
+    background-size: cover;
+}
+
+#d6 {
+    background-image: url(../img/r21.jpg);
+    background-size: cover;
+}
+
+.card7 {
+    background-image: url(../img/r7.jpg);
+    background-size: cover;
+}
+
+#d7 {
+    background-image: url(../img/r22.jpg);
+    background-size: cover;
+}
+
+.card8 {
+    background-image: url(../img/r8.jpg);
+    background-size: cover;
+}
+
+#d8 {
+    background-image: url(../img/r23.jpg);
+    background-size: cover;
+}
+
+.card9 {
+    background-image: url(../img/r9.jpg);
+    background-size: cover;
+}
+
+#a9 {
+    background-image: url(../img/r24.jpg);
+    background-size: cover;
+}
+
+.card10 {
+    background-image: url(../img/r10.jpg);
+    background-size: cover;
+}
+
+#a10 {
+    background-image: url(../img/r25.jpg);
+    background-size: cover;
+}
+
+.card11 {
+    background-image: url(../img/r11.jpg);
+    background-size: cover;
+}
+
+#a11 {
+    background-image: url(../img/r26.jpg);
+    background-size: cover;
+}
+
+.card12 {
+    background-image: url(../img/r12.jpg);
+    background-size: cover;
+}
+
+#a12 {
+    background-image: url(../img/r27.jpg);
+    background-size: cover;
+}
+
+.card13 {
+    background-image: url(../img/r13.jpg);
+    background-size: cover;
+}
+
+#a13 {
+    background-image: url(../img/r28.jpg);
+    background-size: cover;
+}
+
+.card14 {
+    background-image: url(../img/r14.jpg);
+    background-size: cover;
+}
+
+#a14 {
+    background-image: url(../img/r29.jpg);
+    background-size: cover;
+}
+
+.card15 {
+    background-image: url(../img/r15.jpg);
+    background-size: cover;
+}
+
+#a15 {
+    background-image: url(../img/r30.jpg);
+    background-size: cover;
+}

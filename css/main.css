@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+#repro {
+    position: absolute;
+    margin-top: 290px;
+    width: 8%;
+    height: 3%;
+    right: 5px;
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-video video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #30395275;
+    z-index: 1;
+    opacity: .85;
+}
+
+.header-content {
+    z-index: 2;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (orientation: portrait) {
+    .header-content {
+        justify-content: center;
+        font-size: 50px;
+    }
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+    transition: .4s all;
+}
+
+.header-content h1:hover {
+    color: rgb(0, 238, 255);
+    transform: rotate(360deg);
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    transition: .4s all;
+}
+
+.header-content p:hover {
+    color: red;
+    transform: rotate(360deg);
+}
+
+@media (orientation: portrait) {
+    .header-content p {
+        font-size: 2rem;
+        display: block;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (orientation: portrait) {
+    .header-content p:hover {
+        font-size: 2rem;
+        display: block;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .content {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+
+/*aca van los botones*/
+
+.fill:focus,
+.fill:hover {
+    box-shadow: inset 0 0 0 2em var(--hover)
+}
+
+a {
+    text-decoration: none;
+    color: rgb(39, 142, 211);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(212, 38, 8);
+}
+
+.pulse:focus,
+.pulse:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0)
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 var(--hover)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 var(--hover)
+    }
+}
+
+.close:focus,
+.close:hover {
+    box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover)
+}
+
+.raise:focus,
+.raise:hover {
+    box-shadow: 0 .5em .5em -.4em var(--hover);
+    -webkit-transform: translateY(-.25em);
+    transform: translateY(-.25em)
+}
+
+.up:focus,
+.up:hover {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover)
+}
+
+.slide:focus,
+.slide:hover {
+    box-shadow: inset 6.5em 0 0 0 var(--hover)
+}
+
+.offset {
+    box-shadow: .3em .3em 0 0 var(--color), inset .3em .3em 0 0 var(--color)
+}
+
+.offset:focus,
+.offset:hover {
+    box-shadow: 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover)
+}
+
+.fill {
+    --color: #a972cb;
+    --hover: #cb72aa
+}
+
+.pulse {
+    --color: #ef6eae;
+    --hover: #ef8f6e
+}
+
+.close {
+    --color: #ff7f82;
+    --hover: #ffdc7f
+}
+
+.raise {
+    --color: #ffa260;
+    --hover: #e5ff60
+}
+
+.up {
+    --color: #e4cb58;
+    --hover: #94e458
+}
+
+.slide {
+    --color: #8fc866;
+    --hover: #66c887
+}
+
+.offset {
+    --color: #19bc8b;
+    --hover: #1973bc
+}
+
+button {
+    color: var(--color);
+    transition: .25s
+}
+
+button:focus,
+button:hover {
+    border-color: var(--hover);
+    color: #fff
+}
+
+body {
+    color: #fff;
+    background: #17181c;
+    font: 300 1em 'Fira Sans', sans-serif;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex
+}
+
+button {
+    background: 0 0;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: .5em;
+    padding: 1em 2em
+}
+
+h1 {
+    font-weight: 400
+}
+
+code {
+    color: #e4cb58;
+    font: inherit
+}
